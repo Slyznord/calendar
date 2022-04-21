@@ -1,0 +1,40 @@
+.event {
+  @apply
+    flex
+    px-1
+    text-sm
+    rounded-lg
+    w-full
+    whitespace-nowrap
+    overflow-ellipsis
+    overflow-hidden
+    transition-all
+    delay-500
+    mr-auto
+    mb-2
+  ;
+
+  &:hover {
+    width: auto;
+    z-index: 10;
+  }
+
+  &_success {
+    @apply
+      bg-green-500
+      text-green-800
+    ;
+  }
+
+  &_error {
+    @apply
+      bg-red-300
+      text-red-800
+    ;
+  }
+
+  &_warning {
+    color:  rgb(234, 88, 12);
+    background: rgb(253, 186, 116);
+  }
+}

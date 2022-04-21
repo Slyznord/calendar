@@ -1,0 +1,61 @@
+@import '../mixins';
+
+.calendar {
+  @apply
+    flex
+    flex-col
+    items-start
+    bg-white
+    rounded-lg
+    py-4
+    px-4
+  ;
+
+  &__control {
+    @apply
+      flex
+      items-center
+      justify-center
+      w-auto
+      mb-6
+    ;
+  }
+
+  &__control-item {
+    @apply
+      text-gray-800
+      cursor-pointer
+    ;
+  }
+
+  &__header {
+    @include grid;
+    @apply
+      py-2
+      w-full
+    ;
+
+    &_short {
+      @apply
+        hidden
+        md:block
+      ;
+    }
+  }
+
+  &__day {
+    @apply
+      text-sm
+      font-semibold
+      text-gray-600
+      text-right
+      uppercase
+      select-none
+    ;
+  }
+
+  &__days {
+    @include grid;
+    width: auto;
+  }
+}

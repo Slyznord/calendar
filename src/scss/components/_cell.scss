@@ -1,0 +1,47 @@
+.cell {
+  @apply
+    flex
+    flex-col
+    items-end
+    justify-start
+    px-2
+    py-2
+    rounded-lg
+    text-base
+    font-semibold
+    shadow-sm
+    select-none
+    relative
+  ;
+
+  height: 120px;
+
+  &_default {
+    @apply
+      border
+      border-gray-100
+      text-black
+      bg-white
+    ;
+  }
+
+  &_weekend {
+    @apply
+      text-indigo-300
+    ;
+  }
+
+  &_past {
+    @apply
+    bg-gray-100
+    text-gray-400
+    ;
+  }
+
+  &_today {
+    @apply
+    text-green-300
+    border-2
+    border-gray-400
+  }
+}
